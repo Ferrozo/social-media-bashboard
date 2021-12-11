@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(230, 17%, 14%);
+    font-family: 'Inter', sans-serif;
+}
+
+.header-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 15%;
+    color: hsl(0, 0%, 100%);
+    height: 30vh;
+    background: hsl(232, 19%, 15%);
+    border-radius: 0px 0px 25px 25px;
+}
+.header-text-container {
+    height: 60px;
+}
+.header-text-container p, .header-dark-light h3{
+    color: hsl(228, 34%, 66%);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.header-dark-light {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-dark-light h3{
+    margin-right: 20px;
+}
+
+.btn-dark-light-container {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    width: 40px;
+    height: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.btn-dark-light-container button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 0;
+    background: hsl(228, 28%, 20%);
+}
+
+/* ------------------------------------------------------------------ */
+.all-cards-container {
+    min-height: 75vh;
+    padding:  0 15%;
+}
+
+.first-cards-container {
+    display: flex;
+    min-height: 100px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+
+.card-container{
+    background: hsl(228, 28%, 20%);
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.card-container:hover {
+    background: hsl(228, 28%, 24%);
+    cursor: pointer;
+}
+
+.card-left-margin {
+    margin-left: 20px;
+}
+
+.card-header-color {
+    height: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.header-fb {
+    background: hsl(208, 92%, 53%);
+}
+
+.header-tw {
+    background: hsl(203, 89%, 53%);
+}
+
+.header-inst {
+    background: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.header-ytube {
+    background: hsl(348, 97%, 39%);
+}
+
+.fs-content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.number-of-info {
+    margin-top: 5px;
+    color: hsl(0, 0%, 100%);
+    font-size: 35px;
+}
+.netw-user-info {
+    color: hsl(228, 34%, 66%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.netw-user-info i {
+    margin: 0 10px;
+}
+
+.followers-subs {
+    margin-top: 10px;
+    letter-spacing: 3px;
+    color: hsl(228, 34%, 66%);
+    text-transform: uppercase;
+}
+
+.today-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-weight: 600;
+    color: hsl(146, 68%, 55%);
+}
+
+.today-down-count-color {
+    color: hsl(356, 69%, 56%);
+}
+
+/* ------------------------------------------------------------------ */
+
+.second-cards-container h3{
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+}
+
+.extra-cards-info {
+    display: flex;
+    justify-content: center;
+}
+
+.each-card-extra {
+    margin-top: 20px;
+    padding: 10px 0;
+    background: hsl(228, 28%, 20%);
+    width: 250px;
+    height: 105px;
+    border-radius: 5px;
+}
+
+
+
+.each-card-extra:hover {
+    background: hsl(228, 28%, 24%);
+    cursor: pointer;
+}
+
+.extra-header-card, .extra-footer-card {
+    padding: 10px 20px;
+    display: flex;
+    justify-content:space-between;
+    color: hsl(0, 0%, 100%);
+}
+
+.extra-footer-card-info {
+    display: flex;
+    align-items: center;
+    color: hsl(146, 68%, 55%);
+}
+
+.today-down-count-color-extra {
+    color: hsl(356, 69%, 56%);
+} 
+
+
+@media only screen and (max-width:820px){
+
+}
+
+@media only screen and (max-width:800px){
+    .header-intro{
+        justify-content: unset;
+        flex-direction: column;
+        height: 35vh;
+        padding: 15px 20px; 
+    }
+
+    .header-dark-light {
+        width: 100%;
+        border-top: .5px solid hsl(228, 34%, 66%);
+        margin-top: 10px;
+    }
+
+    .all-cards-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .first-cards-container {
+        margin-top: -25px;
+        flex-direction: column;
+    }
+
+    .card-container{
+        width: 270px;
+    }
+
+    .card-left-margin {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    /* ----------------------------------------------------- */
+    .second-cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extra-cards-info {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+}
